@@ -1,0 +1,11 @@
+/* index.css */
+:root{
+        border: none;
+        margin: 0; /* Remove margins globally */
+        padding: 0; /* Remove padding globally */
+        box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

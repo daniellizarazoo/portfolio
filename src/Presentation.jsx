@@ -1,0 +1,47 @@
+import TypeWritter from "./components/TypeWritter";
+import {Linkedin,Github} from "lucide-react";
+import { useNavigate } from "react-router-dom";
+const Presentation = () => {
+    
+    const nav = useNavigate();
+
+    return (
+        <>
+            <main className="relative z-10 container mt-12 lg:mt-36 flex flex-col lg:flex-row justify-between items-center">
+                <div className="max-w-lg cursor-default font-mono text-center lg:text-left">
+                    <h1 className="text-5xl sm:text-6xl lg:text-7xl mb-4 font-mono">
+                        Hi! <span className="animate-wave inline-block text-7xl">🤖</span>
+                    </h1>
+                    <h2 className="text-4xl mb-6 whitespace-nowrap">
+                        I&apos;m <span className="font-bold text-teal-400">Daniel Lizarazo</span>
+                    </h2>
+                    <TypeWritter
+                        data={['Electronic engineer', 'Junior fullstack developer','+1 year of experience']}
+                        speed={50}
+                    />
+                    <button className="mt-6 text-lg sm:text-2xl text-white bg-teal-400 p-3 rounded-2xl transition-transform duration-300 hover:bg-teal-600"
+                    onClick={()=>nav('/about')}>
+                        Get to know me
+                    </button>
+                    <div className="flex gap-6 mt-5 mx-2">
+                        <a href="https://www.linkedin.com/in/daniellizarazoo" target="_blank" rel="noopener noreferrer">
+                            <Linkedin size={32} className="text-teal-400 hover:text-teal-600 transition-colors" />
+                        </a>
+                        <a href="https://github.com/daniellizarazoo" target="_blank" rel="noopener noreferrer">
+                            <Github size={32} className="text-teal-400 hover:text-teal-600 transition-colors" />
+                        </a>
+                    </div>
+                </div>
+                <div className="block lg:block">
+                    <img 
+                        src="src/assets/guy_programming3.webp?width=300&height=400" 
+                        alt="Illustration" 
+                        className="w-96 h-auto"
+                    />
+                </div>
+            </main>
+        </>
+    );
+};
+
+export default Presentation;
