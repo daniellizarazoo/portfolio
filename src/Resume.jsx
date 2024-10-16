@@ -4,9 +4,9 @@ export default function Resume() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-teal-400 mb-6">
                 Resume
             </h2>
-            <div className="relative w-full h-[90vh] sm:h-[70vh] lg:h-[80vh]">
+            <div className="relative w-full h-[70vh] lg:h-[80vh] max-h-screen">
                 <iframe 
-                    src="https://drive.google.com/file/d/1V86XognmKQtC_9UzSY8kvMuktXwwpF06/preview" 
+                    src="https://drive.google.com/file/d/1JcJBhsxGrnrJ3cOcOrPY9oLw3hVwK2ym/preview" 
                     className="absolute top-0 left-0 w-full h-full rounded-lg"
                     allow="autoplay"
                 />
