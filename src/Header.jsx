@@ -31,7 +31,7 @@ const Header = () => {
                 <div className={`flex flex-col lg:flex-row space-x-0 lg:space-x-4 transition-all duration-300 lg:space-y-0 ${isMenuOpen ? 'block' : 'hidden lg:flex'}`}>
                     {[
                         { icon: Home, label: 'Home',route:'/'},
-                        { icon: User, label: 'About',route:'/about' },
+                        { icon: User, label: 'About Me',route:'/about' },
                         { icon: Presentation, label: 'Projects',route:'/projects'},
                         { icon: FileText, label: 'Resume',route:'/resume'}
                     ].map(({ icon: Icon, label, route}) => (
