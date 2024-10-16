@@ -1,7 +1,7 @@
 import TypeWritter from "./components/TypeWritter";
 import { Linkedin, Github } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import guyProgrammingImage from "./assets/guy_programming3.webp";
+import guyProgrammingImage from "/guy.webp";
 
 const Presentation = () => {
     const nav = useNavigate();
@@ -30,7 +30,7 @@ const Presentation = () => {
                     onClick={()=> handleResumeDownload()}
                     // onClick={() => nav('/about')}
                 >
-                    Download Daniel's CV
+                    Download resume
                     {/* Get to know me */}
                 </button>
                 <div className="flex gap-6 mt-5 mx-2 justify-center lg:justify-start">
