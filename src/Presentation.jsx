@@ -1,6 +1,7 @@
 import TypeWritter from "./components/TypeWritter";
 import { Linkedin, Github } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import guyProgrammingImage from "./assets/guy_programming3.webp";
 
 const Presentation = () => {
     const nav = useNavigate();
@@ -43,7 +44,7 @@ const Presentation = () => {
             </div>
             <div className="mt-10 md:mt-0">
                 <img 
-                    src="src/assets/guy_programming3.webp?width=300&height=400" 
+                    src={guyProgrammingImage}
                     alt="Illustration" 
                     className="w-96 h-auto"
                 />
