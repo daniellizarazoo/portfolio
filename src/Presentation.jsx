@@ -1,7 +1,7 @@
 import TypeWritter from "./components/TypeWritter";
 import { Linkedin, Github } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import guyProgrammingImage from "/guy.webp";
+import guyProgrammingImage from "./assets/guy.webp";
 
 const Presentation = () => {
     const nav = useNavigate();

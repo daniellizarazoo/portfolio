@@ -1,8 +1,8 @@
 {
+  "homepage": "https://daniellizarazoo.github.io/portfolio/",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "./",
   "type": "module",
   "scripts": {
     "start": "vite --host",
