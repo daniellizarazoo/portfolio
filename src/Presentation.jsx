@@ -1,13 +1,12 @@
 import TypeWritter from "./components/TypeWritter";
 import { Linkedin, Github } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import guyProgrammingImage from "./assets/guy.webp";
 
 const Presentation = () => {
     const nav = useNavigate();
 
     const handleResumeDownload = () => {
-        const resumeUrl = 'https://drive.google.com/uc?export=download&id=1V86XognmKQtC_9UzSY8kvMuktXwwpF06';
+        const resumeUrl = 'https://drive.google.com/uc?export=download&id=1JcJBhsxGrnrJ3cOcOrPY9oLw3hVwK2ym';
         window.open(resumeUrl, '_blank');
     };
 
