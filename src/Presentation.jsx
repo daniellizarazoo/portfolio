@@ -43,11 +43,17 @@ const Presentation = () => {
                 </div>
             </div>
             <div className="mt-10 md:mt-0">
-                <img 
+                {/* <img 
                     src={guyProgrammingImage}
                     alt="Illustration" 
                     className="w-96 h-auto"
-                />
+                /> */}
+                <img 
+                    src="https://lh3.googleusercontent.com/d/1s67l-OhO1jfXJxvuOjYnlhxGPYZ9c_QU?authuser=0" 
+                    alt="Mujer presentando su negocio Natural-Is Spa Sogamoso"
+                    className="w-96 h-auto object-cover rounded"
+                    onContextMenu={(e) => e.preventDefault()}
+                    />
             </div>
         </main>
     );
