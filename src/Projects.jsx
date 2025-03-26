@@ -8,6 +8,26 @@ export default function Projects () {
 
     const dataForCardboards = [
         {
+            "title": "PCB Design & Electronics prototyping",
+            "techUsed": "KiCad, ESP32, Circuit Design, ESD Protection, Decoupling Capacitors",
+            description: (
+                <>
+                    Designed and developed PCB layouts using <span style={{ color: '#61DBFB' }}><strong>KiCad</strong></span> as part of a self-learning initiative to enhance my understanding of electronics and PCB design. 
+                    Focused on key design principles such as <strong>component placement, signal integrity, and power distribution</strong>.  
+                    Studied and implemented <strong>ESD protection strategies</strong>, proper <strong>decoupling capacitor selection</strong>, and <strong>grounding techniques</strong> to improve circuit reliability.  
+                    Worked with <span style={{ color: '#61DBFB' }}><strong>ESP32</strong></span> for prototyping, gaining hands-on experience in <strong>hardware design and microcontroller interfacing</strong>.
+                </>
+            )
+            ,
+            "link": "",
+            "imagesGoogleDriveId": [
+                "1DfJrXb5G_7UNtx2RocmpaausxI54HhIv",
+                "1l6cA6bHwxy-umptwfnBUUiSGd7YcCWqM",
+                "1-Bi1R7R6rqbhnLjeg-wPvF8q7w-g6vzE",
+                "1iMMuathRHj5u-vVhnP98f8dgvj_raJe1"
+            ]
+        },
+        {
             title: 'CMMS Software',
             techUsed : 'React, Express.js, Zustand, Redux, Postman, Docker, AWS',
             description: (
@@ -16,7 +36,7 @@ export default function Projects () {
                 </>
             ),
             link: '',
-            imagesGoogleDriveId:['1BLnynvRiJTRod4WXV8dCf0eRrsF_mqXa','1sQuJcUfDaF1gtgHWzdsz5kRukBPZ47k7','17zp5H9j05_UYhwYLRqk9TeS4Pmzh8vma','1cTjfTQWFzTWFUAw6UlU7N_cJNtk47ipc','1cpJqGw5xejtnzfXN_pFxh3_IaSQPWifC','1JntHms9Tyf6VwHnspBjx61MAmSaRUC-Y']
+            imagesGoogleDriveId:['1mxPNuofLbX223oz7scdrKMwGE1Mf1voK','16Bs06SUfWcVyGT5kRnmRMBKfeaNdwZxw','12n6DW8zTy7IZ5gl83fF__9b2oqJSjn34','1rmEfztNfLxH7gJD0MDAdq9QaGl5XluVP','1sQ5C6BYR-dFth5R8rrs0jUgjD7maQU0j','1AqR_6xbvSJkwsy1jVU0gtNdITXmPNx_z','1RNo8SPJoUl4f0htCFa0rxGJir3dBqN4g','1BLnynvRiJTRod4WXV8dCf0eRrsF_mqXa','1sQuJcUfDaF1gtgHWzdsz5kRukBPZ47k7','1JntHms9Tyf6VwHnspBjx61MAmSaRUC-Y']
         },
         {
             title: 'Natural-Is Spa Landing page',
