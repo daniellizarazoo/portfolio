@@ -1,9 +1,9 @@
 import TypeWritter from "./components/TypeWritter";
 import { Linkedin, Github } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+
 
 const Presentation = () => {
-    const nav = useNavigate();
+    
 
     const handleResumeDownload = () => {
         const resumeUrl = 'https://drive.google.com/uc?export=download&id=1JcJBhsxGrnrJ3cOcOrPY9oLw3hVwK2ym';
@@ -48,8 +48,8 @@ const Presentation = () => {
                     className="w-96 h-auto"
                 /> */}
                 <img 
-                    src="https://lh3.googleusercontent.com/d/1s67l-OhO1jfXJxvuOjYnlhxGPYZ9c_QU?authuser=0" 
-                    alt="Mujer presentando su negocio Natural-Is Spa Sogamoso"
+                    src="https://lh3.googleusercontent.com/d/1LYcXWeNjinp6aIPJOWhm2SWVCQnfJEWW?authuser=0" 
+                    alt="Ingeniero electronico"
                     className="w-96 h-auto object-cover rounded"
                     onContextMenu={(e) => e.preventDefault()}
                     />

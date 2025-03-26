@@ -8,6 +8,28 @@ export default function Projects () {
 
     const dataForCardboards = [
         {
+            "title": "PCB Design & Electronics prototyping",
+            "techUsed": "KiCad, Proteus, ESP32, Makerchip",
+            description: (
+                <>
+                    Designed and developed PCB layouts using <span style={{ color: '#61DBFB' }}><strong>KiCad</strong></span> as part of a self-learning initiative to enhance my understanding of electronics and PCB design. 
+                    Focused on key design principles such as <strong>component placement, signal integrity, and power distribution</strong>.  
+                    Studied and implemented <strong>ESD protection strategies</strong>, proper <strong>decoupling capacitor selection</strong>, and <strong>grounding techniques</strong> to improve circuit reliability.  
+                    Worked with <span style={{ color: '#61DBFB' }}><strong>ESP32</strong></span> for prototyping, gaining hands-on experience in <strong>hardware design and microcontroller interfacing</strong>.
+                    I also enjoy opening devices to explore their design and learn from the internal components. I always look for ways to apply that knowledge to improve my own designs and prototypes.
+                </>
+            )
+            ,
+            "link": "",
+            "imagesGoogleDriveId": [
+                "1DfJrXb5G_7UNtx2RocmpaausxI54HhIv",
+                "1l6cA6bHwxy-umptwfnBUUiSGd7YcCWqM",
+                "1-Bi1R7R6rqbhnLjeg-wPvF8q7w-g6vzE",
+                "1iMMuathRHj5u-vVhnP98f8dgvj_raJe1",
+                "12Si-fB_Jo7qX2xdjXrDfxiQ91AKb38Hw"
+            ]
+        },
+        {
             title: 'CMMS Software',
             techUsed : 'React, Express.js, Zustand, Redux, Postman, Docker, AWS',
             description: (
@@ -16,7 +38,7 @@ export default function Projects () {
                 </>
             ),
             link: '',
-            imagesGoogleDriveId:['1BLnynvRiJTRod4WXV8dCf0eRrsF_mqXa','1sQuJcUfDaF1gtgHWzdsz5kRukBPZ47k7','17zp5H9j05_UYhwYLRqk9TeS4Pmzh8vma','1cTjfTQWFzTWFUAw6UlU7N_cJNtk47ipc','1cpJqGw5xejtnzfXN_pFxh3_IaSQPWifC','1JntHms9Tyf6VwHnspBjx61MAmSaRUC-Y']
+            imagesGoogleDriveId:['1mxPNuofLbX223oz7scdrKMwGE1Mf1voK','16Bs06SUfWcVyGT5kRnmRMBKfeaNdwZxw','12n6DW8zTy7IZ5gl83fF__9b2oqJSjn34','1rmEfztNfLxH7gJD0MDAdq9QaGl5XluVP','1sQ5C6BYR-dFth5R8rrs0jUgjD7maQU0j','1AqR_6xbvSJkwsy1jVU0gtNdITXmPNx_z','1RNo8SPJoUl4f0htCFa0rxGJir3dBqN4g','1BLnynvRiJTRod4WXV8dCf0eRrsF_mqXa','1sQuJcUfDaF1gtgHWzdsz5kRukBPZ47k7','1JntHms9Tyf6VwHnspBjx61MAmSaRUC-Y']
         },
         {
             title: 'Natural-Is Spa Landing page',
@@ -96,12 +118,12 @@ export default function Projects () {
         
         {cardBoardVisibility && 
             <div 
-               onClick={()=>setCardBoardVisibility(false)}
-               className="fixed inset-0 bg-black bg-opacity-50 z-20 overflow-y-auto"
-             >
+                onClick={()=>setCardBoardVisibility(false)}
+                className="fixed inset-0 bg-black bg-opacity-50 z-20 overflow-y-auto"
+            >
                 <div 
-                 onClick={(e) => e.stopPropagation()}
-                 className="bg-slate-900 p-6  w-full lg:min-h-0 lg:h-[90vh] lg:w-[90vw] lg:mx-auto lg:my-[5vh] lg:rounded-lg relative">
+                    onClick={(e) => e.stopPropagation()}
+                    className="bg-slate-900 p-6  w-full lg:min-h-0 lg:h-[90vh] lg:w-[90vw] lg:mx-auto lg:my-[5vh] lg:rounded-lg relative">
                         <button 
                             onClick={()=>setCardBoardVisibility(false)} 
                             className="absolute top-2 right-2 z-30 text-teal-400 focus:outline-none"
@@ -110,7 +132,7 @@ export default function Projects () {
                             X 
                         </button>
 
-                 
+                
                         <div className="flex flex-col lg:flex-row lg:h-full">
                                     {/* Content Div */}
                                     <div className="w-full lg:w-1/2 lg:pr-6 mb-6 lg:mb-0 lg:overflow-y-auto">
@@ -170,7 +192,7 @@ export default function Projects () {
                                     </div>
                         </div>
                 </div>
-             </div> 
+            </div> 
         }
     </>
     )
