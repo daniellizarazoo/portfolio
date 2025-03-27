@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate,useLocation } from "react-router-dom";
 
 export default function Projects () {
     
+    const nav = useNavigate();
+    const location = useLocation();
 
     const [cardBoardVisibility, setCardBoardVisibility] = useState(false);
     const [cardBoardData,setCarboardData] = useState('');
@@ -90,6 +93,19 @@ export default function Projects () {
         }
     ];
     
+    useEffect(() => {
+        const projectIndex = location.hash.replace("#", ""); // Get the hash value without #
+        
+        // Ensure it's a valid number and within array bounds
+        if (/^\d+$/.test(projectIndex)) {
+            const index = parseInt(projectIndex, 10);
+            if (index >= 0 && index < dataForCardboards.length) {
+                setCarboardData(dataForCardboards[index]);
+                setCardBoardVisibility(true);
+            }
+        }
+    }, [location]);
+
 
     return(
     <>
@@ -104,6 +120,7 @@ export default function Projects () {
                         onClick={() => {
                             setCarboardData(data);
                             setCardBoardVisibility(true);
+                            nav(`/projects#${index}`);
                         }}
                         className="bg-slate-800 p-6 rounded-lg shadow-lg border-2 border-teal-50 cursor-pointer">
                         <h3 className="text-2xl font-bold mb-4 text-teal-400">{data.title}</h3>
@@ -118,14 +135,14 @@ export default function Projects () {
         
         {cardBoardVisibility && 
             <div 
-                onClick={()=>setCardBoardVisibility(false)}
+                onClick={()=>{setCardBoardVisibility(false);nav('/projects')}}
                 className="fixed inset-0 bg-black bg-opacity-50 z-20 overflow-y-auto"
             >
                 <div 
                     onClick={(e) => e.stopPropagation()}
                     className="bg-slate-900 p-6  w-full lg:min-h-0 lg:h-[90vh] lg:w-[90vw] lg:mx-auto lg:my-[5vh] lg:rounded-lg relative">
                         <button 
-                            onClick={()=>setCardBoardVisibility(false)} 
+                            onClick={()=>{setCardBoardVisibility(false);nav('/projects')}} 
                             className="absolute top-2 right-2 z-30 text-teal-400 focus:outline-none"
                             aria-label="Close"
                             >
@@ -185,6 +202,7 @@ export default function Projects () {
                                                 alt="Project images"
                                                 className="object-contain rounded p-5 mx-auto w-full"
                                                 draggable="false" 
+                                                referrerPolicy="no-referrer"
                                                 onContextMenu={(e) => e.preventDefault()}
                                                 />
                                             )))

@@ -1,9 +1,10 @@
 import TypeWritter from "./components/TypeWritter";
 import { Linkedin, Github } from "lucide-react";
-
+import {useNavigate} from "react-router-dom";
 
 const Presentation = () => {
     
+    const nav = useNavigate();
 
     const handleResumeDownload = () => {
         const resumeUrl = 'https://drive.google.com/uc?export=download&id=1JcJBhsxGrnrJ3cOcOrPY9oLw3hVwK2ym';
@@ -26,10 +27,10 @@ const Presentation = () => {
                 />
                 <button 
                     className="mt-6 text-lg sm:text-2xl text-white bg-teal-400 p-3 rounded-2xl transition-transform duration-300 hover:bg-teal-600"
-                    onClick={()=> handleResumeDownload()}
-                    // onClick={() => nav('/about')}
+                    // onClick={()=> handleResumeDownload()}
+                    onClick={() => nav('/projects')}
                 >
-                    Download resume
+                    Check out my projects
                     {/* Get to know me */}
                 </button>
                 <div className="flex gap-6 mt-5 mx-2 justify-center lg:justify-start">
@@ -50,6 +51,7 @@ const Presentation = () => {
                 <img 
                     src="https://lh3.googleusercontent.com/d/1LYcXWeNjinp6aIPJOWhm2SWVCQnfJEWW?authuser=0" 
                     alt="Ingeniero electronico"
+                    referrerPolicy="no-referrer"
                     className="w-96 h-auto object-cover rounded"
                     onContextMenu={(e) => e.preventDefault()}
                     />

@@ -6,7 +6,7 @@ export default function Resume() {
             </h2>
             <div className="relative w-full h-[70vh] lg:h-[80vh] max-h-screen">
                 <iframe 
-                    src="https://drive.google.com/file/d/1JcJBhsxGrnrJ3cOcOrPY9oLw3hVwK2ym/preview" 
+                    src="https://drive.google.com/file/d/1ygzjyUn1AdVRAuEurFVRg7HKzn88RMmP/preview" 
                     className="absolute top-0 left-0 w-full h-full rounded-lg"
                     allow="autoplay"
                 />

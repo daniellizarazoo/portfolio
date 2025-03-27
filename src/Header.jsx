@@ -16,7 +16,7 @@ const Header = () => {
             <nav className="flex justify-between items-center mx-4 lg:mx-24">
                 <div className="font-bold text-teal-400 cursor-pointer text-3xl"
                 onClick={()=>nav('/')}>
-                    TECNODM DL
+                    Daniel Lizarazo
                 </div>
                 <div className="flex items-center lg:hidden">
                     <button onClick={toggleMenu} className="text-teal-400 focus:outline-none">
